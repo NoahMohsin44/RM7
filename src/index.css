@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --color-primary: #ffffff;
+  --color-secondary: #a1a1aa;
+  --color-accent: #3ECF8E;
+  /* Supabase Green */
+  --color-bg: #121212;
+  /* Supabase Background */
+  --color-card: #1C1C1C;
+
+  /* Update Tailwind utilities override if possible or just use in classes */
+}
+
+body {
+  @apply bg-zinc-950 text-white font-sans antialiased;
+  background: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #121212 100%);
+  min-height: 100vh;
+}
